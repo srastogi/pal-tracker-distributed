@@ -10,6 +10,8 @@ applications:
     GRANT_TYPE: client_credentials
     SECURITY_OAUTH2_CLIENT_CLIENT_ID: tracker-client
     SECURITY_OAUTH2_CLIENT_CLIENT_SECRET: supersecret
+    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *
   services:
   - tracker-registration-database
   - tracker-service-registry
+  - tracker-config-server
