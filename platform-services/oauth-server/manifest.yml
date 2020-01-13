@@ -1,0 +1,9 @@
+applications:
+  - name: oauth-server
+    path: ./build/libs/oauth-server.jar
+    routes:
+      - route: oauth-server-pal-srastogi.cfapps.io
+    memory: 1G
+    instances: 1
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
